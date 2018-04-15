@@ -1,15 +1,15 @@
 @import
-'resources/reset',
-'resources/mixins',
-'resources/grid',
-'resources/helpers',
-'resources/fonts',
-'resources/palette',
-'resources/variables',
+'resources/_fonts',
+'resources/_palette',
+'resources/_variables',
+'resources/_reset',
+'resources/_mixins',
+'resources/_grid',
+'resources/_helpers',
 
-'atoms/base',
-'atoms/button',
+'elements/_base',
+'elements/_button',
+'elements/_header',
+'elements/_footer',
 
-'blocs/header',
-
-'pages/auth',
+'pages/_index'
