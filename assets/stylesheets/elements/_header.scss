@@ -1,3 +1,30 @@
 header {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 2rem;
+    grid-column-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;
+    z-index: 1;
 
+    background-color: $blue;
+
+    a{
+        text-align: center;
+
+        img{
+            grid-column: 1 / 2;
+            width: 50%;
+        }
+    }
+
+    nav{
+        display: flex;
+        grid-column: 2 / 3;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0px 4rem;
+    }
 }

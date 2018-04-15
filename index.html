@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/application.css">
+
     <title>BEST Coimbra</title>
 </head>
 
 <body>
     <!-- NAVIGATION BAR -->
     <header>
-        <img alt="Logo BEST Coimbra" src="assets/images/logo_best_coimbra.png">
+        <a href="index.html">
+            <img alt="Logo BEST Coimbra" src="assets/images/logo_best_coimbra.png">
+        </a>
         <nav>
             <a href="src/about.html"><h2>BEST</h2></a>
             <a href="src/companies/companies.html"><h2>Companies</h2></a>
@@ -24,35 +28,39 @@
 
     <main>
         <!-- LANDING -->
-        <div>
-            <h1>Join for Improvement</h1>
-            <h1>Stay for the Spirit</h1>
-
-            <div> <!-- Slide Images -->
-                <img alt="Imagem PT Meeting" src="assets/images/foto_PTMeeting.jpg">
+        <div class="landing full-screen">
+            <div class="title">
+                <h1>Join for Improvement</h1>
+                <h1>Stay for the Spirit</h1>
             </div>
 
-            <div> <!-- Slide Navigation -->
+            <div class="slide">
+                <div> <!-- Slide Images -->
+                    <img alt="Imagem PT Meeting" src="assets/images/foto_PTMeeting.jpg">
+                </div>
+
+                <div> <!-- Slide Navigation -->
+                </div>
             </div>
         </div>
 
         <!-- PARTNERS AND TARGET AUDIENCE -->
-        <div>
-            <div> <!-- For Students -->
+        <div class="index_content full-screen">
+            <div class="students"> <!-- For Students -->
                 <a href="src/students/students.html">
                     <h2>For Students</h2>
                     <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
                 </a>
             </div>
 
-            <div> <!-- For Companies -->
+            <div class="companies"> <!-- For Companies -->
                 <a href="src/companies/companies.html">
                     <h2>For Companies</h2>
                     <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
                 </a>
             </div>
 
-            <div> <!-- Institutional Partners -->
+            <div class="institutional"> <!-- Institutional Partners -->
                 <h2>Institutional Partners</h2>
 
                 <a target="_blank" href="http://https://www.uc.pt/en/fctuc">
@@ -66,7 +74,7 @@
                 </a>
             </div>
 
-            <div> <!-- Anual Partners -->
+            <div class="anual"> <!-- Anual Partners -->
                 <h2>Anual Partners</h2>
 
                 <a target="_blank" href="http://space.ipn.pt/">
@@ -93,18 +101,18 @@
 
 
     <footer>
-        <div> <!-- top left-->
+        <div class="contacts"> <!-- top left-->
             <div><!-- mail -->
-                <img alt="mail icon" src="assets/images/icon_mail.png">
-                <h3>coimbra@best.eu.org</h3>
+                <img class="ib" alt="mail icon" src="assets/images/icon_mail.png">
+                <h3 class="ib">coimbra@best.eu.org</h3>
             </div>
             <div><!-- phone -->
-                <img alt="phone icon" src="assets/images/icon_phone.png">
-                <h3>+351 239 000 000</h3>
+                <img class="ib "alt="phone icon" src="assets/images/icon_phone.png">
+                <h3 class="ib">+351 239 000 000</h3>
             </div>
         </div>
 
-        <div> <!-- top right -->
+        <div class="social"> <!-- top right -->
             <div>
                 <a href="https://www.facebook.com/BESTCoimbra/">
                     <img alt="Facebook Link" src="assets/images/icon_facebook.png">
@@ -123,19 +131,19 @@
             </div>
         </div>
 
-        <div> <!-- navigation -->
-            <div>
-                <a href="src/companies/companies.html"><h2>Companies</h2></a>
-                <a href="src/students/students.html"><h2>Students</h2></a>
-                <a href="src/members.html"><h2>Members</h2></a>
+        <div class="navigation"> <!-- navigation -->
+            <div class="nav_top">
+                <a class="ib" href="src/companies/companies.html"><h2>Companies</h2></a>
+                <a class="ib" href="src/students/students.html"><h2>Students</h2></a>
+                <a class="ib" href="src/members.html"><h2>Members</h2></a>
             </div>
-            <div>
-                <a href="src/about.html"><h2>BEST</h2></a>
-                <a href="src/contacts.html"><h2>Contacts</h2></a>
+            <div class="nav_bottom">
+                <a class="ib" href="src/about.html"><h2>BEST</h2></a>
+                <a class="ib" href="src/contacts.html"><h2>Contacts</h2></a>
             </div>
         </div>
 
-        <p>© 2018 BEST Coimbra. All rights reserved.</p>
+        <p class="copyright">© 2018 BEST Coimbra. All rights reserved.</p>
     </footer>
 
 </body>
