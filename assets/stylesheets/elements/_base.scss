@@ -12,19 +12,31 @@ html {
 
 body {
   background-color: $white;
-  color: $dark;
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: -.001em;
-  line-height: 2.8rem;
+  color: $black;
 }
 
 h1 {
-  font-size: 4rem;
-  letter-spacing: -.05em;
-  line-height: 140%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 140%;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 20px;
+}
+
+p{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
 }
 
 span {
@@ -35,7 +47,7 @@ a {
   @include transition();
   cursor: pointer;
   text-decoration: none;
-  color: $white;
+  color: $black;
 
   &:hover {
       text-decoration: underline;

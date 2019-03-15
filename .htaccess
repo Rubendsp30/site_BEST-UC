@@ -1,0 +1,3 @@
+AddDefaultCharset utf-8
+#for css, js, etc.
+AddCharset utf-8 .htm .html .js .css
