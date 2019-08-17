@@ -19,6 +19,8 @@
         left: 0%;
         padding: 3% 5% 3% 3%;
         margin-top: 2rem;
+        background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0))), #C4C4C4;
+        background: -o-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4C4C4;
         background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4C4C4;
 
         h2{

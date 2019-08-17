@@ -17,9 +17,9 @@
 
 <body>
     <!-- NAVIGATION BAR -->
-    <header>
+    <header id='main_header'>
         <a href="../../index.html">
-            <img alt="Logo BEST Coimbra" src="../../assets/images/logo_best_coimbra.png">
+            <img id='logo_best' alt="Logo BEST Coimbra" src="../../assets/images/logo_best_coimbra.png">
         </a>
         <nav>
             <a href="../about.html"><h2>BEST</h2></a>
@@ -41,7 +41,7 @@
                 <a href="_recruitment.html"><h2>Recruitment</h2></a>
             </div>
             <a href="../contacts.html"><h2>Contacts</h2></a>
-            <a href="../members.html"><i class="fas fa-users"></i></a>
+            <a href="../members.html"><i class="fas fa-user-circle fa-2x"></i></a>
         </nav>
 
         <div class="hamburger">
@@ -78,12 +78,10 @@
 
         </div>
     </main>
-
-
-    <footer class="mt-700">
+ 	<footer>
         <div class="contacts"> <!-- top left-->
             <div><!-- mail -->
-                <img class="ib" alt="mail icon" src="../../assets/images/icon_mail.png">
+                <i class="far fa-envelope fa-3x"></i>
                 <p class="ib">coimbra@best.eu.org</p>
             </div>
         </div>
@@ -91,40 +89,42 @@
         <div class="social"> <!-- top right -->
             <div>
                 <a href="https://www.facebook.com/BESTCoimbra/" target="_blank">
-                    <img alt="Facebook Link" src="../../assets/images/icon_facebook.png">
+                    <i class="fab fa-facebook-square fa-3x" style="color: white"></i>
                 </a>
                 <a href="https://www.linkedin.com/company/11337545/" target="_blank">
-                    <img alt="Facebook Link" src="../../assets/images/icon_linkedin.png">
+                    <i class="fab fa-linkedin-in fa-3x" style="color: white; padding-left:10px"></i>
                 </a>
             </div>
             <div>
                 <a href="https://twitter.com/BESTCoimbra" target="_blank">
-                    <img alt="Facebook Link" src="../../assets/images/icon_twitter.png">
+                    <i class="fab fa-twitter fa-3x" style="color: white"></i>
                 </a>
                 <a href="https://www.instagram.com/bestcoimbra/" target="_blank">
-                    <img alt="Facebook Link" src="../../assets/images/icon_instagram.png">
+                    <i class="fab fa-instagram fa-3x" style="color: white; padding-left:10px" ></i>
                 </a>
             </div>
         </div>
 
         <div class="navigation"> <!-- navigation -->
             <div class="nav_top">
-                <a class="ib" href="../companies/companies.html"><h2>Companies</h2></a>
-                <a class="ib" href="students.html"><h2>Students</h2></a>
-                <a class="ib" href="../members.html"><h2>Members</h2></a>
+                <a class="ib" href="src/companies/companies.html"><h2>Companies</h2></a>
+                <a class="ib" href="src/students/students.html"><h2>Students</h2></a>
+                <a class="ib" href="src/members.html"><h2>Members</h2></a>
             </div>
             <div class="nav_bottom">
-                <a class="ib" href="../about.html"><h2>BEST</h2></a>
-                <a class="ib" href="../contacts.html"><h2>Contacts</h2></a>
+                <a class="ib" href="src/about.html"><h2>BEST</h2></a>
+                <a class="ib" href="src/contacts.html"><h2>Contacts</h2></a>
             </div>
         </div>
 
         <p class="copyright">© 2018 BEST Coimbra. All rights reserved.</p>
 
-        <img class="decoration" src="../../assets/images/footer_img.png" alt="Corner Footer Decoration">
+        <img class="decoration" src="assets/images/footer_img.png" alt="Corner Footer Decoration">
     </footer>
 
     <script src="../../assets/js/nav_dropdowns.js"></script>
+    <script src="../../assets/js/header_animation.js"></script>
+
 
 </body>
 </html>

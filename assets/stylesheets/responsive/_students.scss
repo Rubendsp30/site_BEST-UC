@@ -1,7 +1,11 @@
 @media only screen and (min-width: 1000px) {
     .students_partners{
         display: inline-block !important;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 1;
         grid-column: 2 / 3;
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 1;
         grid-row: 3 / 4;
         margin: 7vh 0px;
 
@@ -10,7 +14,11 @@
             margin: 1rem 4rem;
             vertical-align: middle;
 
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+
+                -ms-flex-pack: justify;
+
+                    justify-content: space-between;
         }
 
         #logo_pequeno{
@@ -27,8 +35,11 @@
     }
 
     .students_submenu{
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+        -ms-grid-rows: 5% 1fr 5%;
         grid-template-rows: 5% 1fr 5%;
         position: relative;
         margin-top: 15vh;
@@ -37,8 +48,14 @@
         text-align: center;
 
         .students_submenu_events{
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
             grid-column: 1 / 2;
+            -ms-grid-row: 2;
+            -ms-grid-row-span: 1;
             grid-row: 2 / 3;
+            background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0))), #C4C4C4;
+            background: -o-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4C4C4;
             background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4C4C4;
             padding: 10vh 20vh;
 
@@ -47,8 +64,14 @@
             }
         }
         .students_submenu_courses{
+            -ms-grid-column: 2;
+            -ms-grid-column-span: 1;
             grid-column: 2 / 3;
+            -ms-grid-row: 2;
+            -ms-grid-row-span: 1;
             grid-row: 2 / 3;
+            background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0))), #C4C4C4;
+            background: -o-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4C4C4;
             background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4C4C4;
             padding: 10vh 20vh;
 
@@ -57,8 +80,14 @@
             }
         }
         .students_submenu_recruitment{
+            -ms-grid-column: 3;
+            -ms-grid-column-span: 1;
             grid-column: 3 / 4;
+            -ms-grid-row: 2;
+            -ms-grid-row-span: 1;
             grid-row: 2 / 3;
+            background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0))), #C4C4C4;
+            background: -o-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4C4C4;
             background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4C4C4;
             padding: 10vh 20vh;
 
@@ -66,5 +95,50 @@
                 background-color: $light_blue;
             }
         }
+    }
+
+    .students_submenu > *:nth-child(1){
+        -ms-grid-row: 1;
+        -ms-grid-column: 1
+    }
+
+    .students_submenu > *:nth-child(2){
+        -ms-grid-row: 1;
+        -ms-grid-column: 2
+    }
+
+    .students_submenu > *:nth-child(3){
+        -ms-grid-row: 1;
+        -ms-grid-column: 3
+    }
+
+    .students_submenu > *:nth-child(4){
+        -ms-grid-row: 2;
+        -ms-grid-column: 1
+    }
+
+    .students_submenu > *:nth-child(5){
+        -ms-grid-row: 2;
+        -ms-grid-column: 2
+    }
+
+    .students_submenu > *:nth-child(6){
+        -ms-grid-row: 2;
+        -ms-grid-column: 3
+    }
+
+    .students_submenu > *:nth-child(7){
+        -ms-grid-row: 3;
+        -ms-grid-column: 1
+    }
+
+    .students_submenu > *:nth-child(8){
+        -ms-grid-row: 3;
+        -ms-grid-column: 2
+    }
+
+    .students_submenu > *:nth-child(9){
+        -ms-grid-row: 3;
+        -ms-grid-column: 3
     }
 }

@@ -12,7 +12,7 @@ Text and alignments
 */
 .no-select   { @include no_select(); }
 
-.truncate    { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.truncate    { -o-text-overflow: ellipsis; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
 
 .relative    { position: relative; }
 .visible     { overflow: visible; }
@@ -25,7 +25,7 @@ Text and alignments
 .left        { float: left; }
 .right       { float: right; }
 .center      { margin: auto; float: none; }
-.img-center  { margin-left: 50%; transform: translateX(-50%); }
+.img-center  { margin-left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
 .clear:after { content: ''; clear: both; display: block; }
 .t-center    { text-align: center; }
 .t-left      { text-align: left; }
@@ -67,9 +67,11 @@ Draggable elements
 */
 .drag {
   cursor: move;
+  cursor: -webkit-grab;
   cursor: grab;
 
   &:active {
+    cursor: -webkit-grabbing;
     cursor: grabbing;
   }
 }
