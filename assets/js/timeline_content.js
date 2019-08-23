@@ -1,16 +1,13 @@
 //Json Object
 $(document).ready(function () {
-    console.log("correu função da timeline!");
 
 	$('#myTimeline').albeTimeline(data, {
 		effect: 'bounceInDown',
 		showGroup: true,
-		formatDate: 'dd de MMMM de yyyy',
+		formatDate: 'MMMM',
         language: "en-us",
         sortDesc: true
 	});
-
-    console.log("correu timeline!");
 
 });
 
