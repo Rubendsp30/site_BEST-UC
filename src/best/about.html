@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../assets/stylesheets/application.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/application.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../assets/images/logo_best.png">
+    <link rel="icon" type="image/png" href="../../assets/images/logo_best.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css" />
-    <link rel="stylesheet" href="../assets/stylesheets/timeline.css"/>
+    <link rel="stylesheet" href="../../assets/stylesheets/timeline.css"/>
 
     <title>BEST Coimbra - About</title>
 </head>
@@ -19,30 +19,37 @@
 <body>
     <!-- NAVIGATION BAR -->
     <header id='main_header'>
-        <a href="../index.html">
-            <img id='logo_best' alt="Logo BEST Coimbra" src="../assets/images/logo_best_coimbra.png">
+        <a href="../../index.html">
+            <img id='logo_best' alt="Logo BEST Coimbra" src="../../assets/images/logo_best_coimbra.png">
         </a>
         <nav>
-            <a href="about.html"><h2>BEST</h2></a>
             <div>
-                <a href="companies/companies.html" class="ib"><h2>Companies</h2></a>
+                <a href="timeline.html" class="ib"><h2>BEST</h2></a>
+                <i class="fas fa-angle-down" class="ib" id="best_dropdown"></i>
+            </div>
+            <div class="nav_dropdown_best">
+                <a href="about.html"><h2>About</h2></a>
+                <a href="timeline.html"><h2>Timeline</h2></a>
+            </div>
+            <div>
+                <a href="../companies/companies.html" class="ib"><h2>Companies</h2></a>
                 <i class="fas fa-angle-down" class="ib" id="companies_dropdown"></i>
             </div>
             <div class="nav_dropdown_companies">
-                <a href="companies/_events.html"><h2>Events</h2></a>
-                <a href="companies/_partnerships.html"><h2>Partnerships</h2></a>
+                <a href="../companies/_events.html"><h2>Events</h2></a>
+                <a href="../companies/_partnerships.html"><h2>Partnerships</h2></a>
             </div>
             <div>
-                <a href="students/students.html" class="ib"><h2>Students</h2></a>
+                <a href="../students/students.html" class="ib"><h2>Students</h2></a>
                 <i class="fas fa-angle-down" class="ib" id="students_dropdown"></i>
             </div>
             <div class="nav_dropdown_students">
-                <a href="students/_events.html"><h2>Events</h2></a>
-                <a href="students/_courses.html"><h2>Courses</h2></a>
-                <a href="students/_recruitment.html"><h2>Recruitment</h2></a>
+                <a href="../students/_events.html"><h2>Events</h2></a>
+                <a href="../students/_courses.html"><h2>Courses</h2></a>
+                <a href="../students/_recruitment.html"><h2>Recruitment</h2></a>
             </div>
-            <a href="contacts.html"><h2>Contacts</h2></a>
-            <a href="members.html"><i class="fas fa-user-circle fa-2x"></i></a>
+            <a href="../contacts.html"><h2>Contacts</h2></a>
+            <a href="../members.html"><i class="fas fa-user-circle fa-2x"></i></a>
         </nav>
 
         <div class="hamburger">
@@ -50,10 +57,10 @@
 
             <div class="hamburger_dropdown">
                 <a href="about.html"><h2>BEST</h2></a>
-                <a href="companies/companies.html"><h2>Companies</h2></a>
-                <a href="students/students.html"><h2>Students</h2></a>
-                <a href="contacts.html"><h2>Contacts</h2></a>
-                <a href="members.html"><i class="fas fa-users"></i></a>
+                <a href="../companies/companies.html"><h2>Companies</h2></a>
+                <a href="../students/students.html"><h2>Students</h2></a>
+                <a href="../contacts.html"><h2>Contacts</h2></a>
+                <a href="../members.html"><i class="fas fa-users"></i></a>
             </div>
         </div>
     </header>
@@ -69,7 +76,7 @@
                 <p>Our priority is to offer high quality services for students all over Europe. Thus, we manage to bring all the partners in the "student-company-university" triangle closer.</p>
             </div>
 
-            <img class="about_gif" src="../assets/images/BEST.gif" alt="BEST Infographic">
+            <img class="about_gif" src="../../assets/images/BEST.gif" alt="BEST Infographic">
         </div>
 
 
@@ -88,10 +95,7 @@
                     4 National Engeneering Competitions<b></p>
             </div>
 
-            <img alt="logo BEST Coimbra" src="../assets/images/logo_best_coimbra_about.png">
-        </div>
-
-        <div id="myTimeline">
+            <img alt="logo BEST Coimbra" src="../../assets/images/logo_best_coimbra_about.png">
         </div>
 
     </main>
@@ -126,26 +130,26 @@
 
         <div class="navigation"> <!-- navigation -->
             <div class="nav_top">
-                <a class="ib" href="companies/companies.html"><h2>Companies</h2></a>
-                <a class="ib" href="students/students.html"><h2>Students</h2></a>
-                <a class="ib" href="members.html"><h2>Members</h2></a>
+                <a class="ib" href="../companies/companies.html"><h2>Companies</h2></a>
+                <a class="ib" href="../students/students.html"><h2>Students</h2></a>
+                <a class="ib" href="../members.html"><h2>Members</h2></a>
             </div>
             <div class="nav_bottom">
                 <a class="ib" href="about.html"><h2>BEST</h2></a>
-                <a class="ib" href="contacts.html"><h2>Contacts</h2></a>
+                <a class="ib" href="../contacts.html"><h2>Contacts</h2></a>
             </div>
         </div>
 
         <p class="copyright">© 2018 BEST Coimbra. All rights reserved.</p>
 
-        <img class="decoration" src="../assets/images/footer_img.png" alt="Corner Footer Decoration">
+        <img class="decoration" src="../../assets/images/footer_img.png" alt="Corner Footer Decoration">
     </footer>
 
     <script src="https://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
-    <script src="../assets/Timeline_Library/jquery-albe-timeline.js"></script>
-    <script src="../assets/js/nav_dropdowns.js"></script>
-    <script src="../assets/js/header_animation.js"></script>
-    <script src="../assets/js/timeline_content.js"></script>
+    <script src="../../assets/Timeline_Library/jquery-albe-timeline.js"></script>
+    <script src="../../assets/js/nav_dropdowns.js"></script>
+    <script src="../../assets/js/header_animation.js"></script>
+    <script src="../../assets/js/timeline_content.js"></script>
 
 
 </body>

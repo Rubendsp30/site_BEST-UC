@@ -37,7 +37,7 @@
                 }
             }
 
-            .nav_dropdown_companies, .nav_dropdown_students{
+            .nav_dropdown_best,.nav_dropdown_companies, .nav_dropdown_students{
                 background-color: $blue;
                 width: 22vh;
                 position: fixed;
@@ -49,6 +49,10 @@
                 a{
                     padding: 0.5vh;
                 }
+            }
+
+            .nav_dropdown_best{
+                left: 30vh;
             }
 
             .nav_dropdown_companies{
