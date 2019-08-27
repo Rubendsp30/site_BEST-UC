@@ -18,6 +18,8 @@
             padding: 1rem 0px;
             margin: 1rem;
             cursor: pointer;
+            background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(55.82%, rgba(255, 255, 255, 0.5689)), to(rgba(255, 255, 255, 0))), #C4C4C4;
+            background: -o-linear-gradient(top, #FFFFFF 0%, rgba(255, 255, 255, 0.5689) 55.82%, rgba(255, 255, 255, 0) 100%), #C4C4C4;
             background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5689) 55.82%, rgba(255, 255, 255, 0) 100%), #C4C4C4;
             border-radius: 0.5rem;
             display: inline-block;
@@ -45,8 +47,11 @@
             margin-bottom: 5rem;
         }
         .companies_banner{
+            display: -ms-grid;
             display: grid;
+            -ms-grid-columns: 10% (1fr)[4] 10%;
             grid-template-columns: 10% repeat(4, 1fr) 10%;
+            -ms-grid-rows: (auto)[4];
             grid-template-rows: repeat(4, auto);
             overflow: hidden;
             margin-bottom: 7vh;
@@ -54,13 +59,21 @@
             .card_foto{
                 width: 100%;
                 height: auto;
+                -ms-grid-column: 1;
+                -ms-grid-column-span: 6;
                 grid-column: 1 / 7;
+                -ms-grid-row: 1;
+                -ms-grid-row-span: 4;
                 grid-row: 1 / 5;
                 overflow: hidden;
             }
 
             .card_banner{
+                -ms-grid-column: 3;
+                -ms-grid-column-span: 2;
                 grid-column: 3 / 5;
+                -ms-grid-row: 2;
+                -ms-grid-row-span: 1;
                 grid-row: 2 / 3;
 
                 img{
@@ -75,7 +88,11 @@
 
             .card_text{
                 width: 100%;
+                -ms-grid-column: 1;
+                -ms-grid-column-span: 6;
                 grid-column: 1 / 7;
+                -ms-grid-row: 4;
+                -ms-grid-row-span: 1;
                 grid-row: 4 / 5;
 
                 h2{
@@ -115,6 +132,102 @@
                     background-color: $color_bestWayToStudy;
                 }
             }
+        }
+        .companies_banner > *:nth-child(1){
+            -ms-grid-row: 1;
+            -ms-grid-column: 1
+        }
+        .companies_banner > *:nth-child(2){
+            -ms-grid-row: 1;
+            -ms-grid-column: 2
+        }
+        .companies_banner > *:nth-child(3){
+            -ms-grid-row: 1;
+            -ms-grid-column: 3
+        }
+        .companies_banner > *:nth-child(4){
+            -ms-grid-row: 1;
+            -ms-grid-column: 4
+        }
+        .companies_banner > *:nth-child(5){
+            -ms-grid-row: 1;
+            -ms-grid-column: 5
+        }
+        .companies_banner > *:nth-child(6){
+            -ms-grid-row: 1;
+            -ms-grid-column: 6
+        }
+        .companies_banner > *:nth-child(7){
+            -ms-grid-row: 2;
+            -ms-grid-column: 1
+        }
+        .companies_banner > *:nth-child(8){
+            -ms-grid-row: 2;
+            -ms-grid-column: 2
+        }
+        .companies_banner > *:nth-child(9){
+            -ms-grid-row: 2;
+            -ms-grid-column: 3
+        }
+        .companies_banner > *:nth-child(10){
+            -ms-grid-row: 2;
+            -ms-grid-column: 4
+        }
+        .companies_banner > *:nth-child(11){
+            -ms-grid-row: 2;
+            -ms-grid-column: 5
+        }
+        .companies_banner > *:nth-child(12){
+            -ms-grid-row: 2;
+            -ms-grid-column: 6
+        }
+        .companies_banner > *:nth-child(13){
+            -ms-grid-row: 3;
+            -ms-grid-column: 1
+        }
+        .companies_banner > *:nth-child(14){
+            -ms-grid-row: 3;
+            -ms-grid-column: 2
+        }
+        .companies_banner > *:nth-child(15){
+            -ms-grid-row: 3;
+            -ms-grid-column: 3
+        }
+        .companies_banner > *:nth-child(16){
+            -ms-grid-row: 3;
+            -ms-grid-column: 4
+        }
+        .companies_banner > *:nth-child(17){
+            -ms-grid-row: 3;
+            -ms-grid-column: 5
+        }
+        .companies_banner > *:nth-child(18){
+            -ms-grid-row: 3;
+            -ms-grid-column: 6
+        }
+        .companies_banner > *:nth-child(19){
+            -ms-grid-row: 4;
+            -ms-grid-column: 1
+        }
+        .companies_banner > *:nth-child(20){
+            -ms-grid-row: 4;
+            -ms-grid-column: 2
+        }
+        .companies_banner > *:nth-child(21){
+            -ms-grid-row: 4;
+            -ms-grid-column: 3
+        }
+        .companies_banner > *:nth-child(22){
+            -ms-grid-row: 4;
+            -ms-grid-column: 4
+        }
+        .companies_banner > *:nth-child(23){
+            -ms-grid-row: 4;
+            -ms-grid-column: 5
+        }
+        .companies_banner > *:nth-child(24){
+            -ms-grid-row: 4;
+            -ms-grid-column: 6
         }
     }
 }
