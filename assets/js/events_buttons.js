@@ -15,7 +15,7 @@ function showBEW(){
     $(".event_ebec").hide();
     $("#EBECbutton").css("background-color","#C4C4C4");
     $(".event_bew").show();
-    $("#BEWbutton").css("background-color","#42b089");
+    $("#BEWbutton").css("background-color","#323366");
     $(".event_hackathon").hide();
     $("#Hackbutton").css("background-color","#C4C4C4");
     $(".event_workshop").hide();
