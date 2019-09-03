@@ -296,8 +296,8 @@
             .address{
                 position: relative;
                 top: -8vh;
-                left: 70vh;
-                width: 70vh;
+                left: 65vh;
+                width: 70%;
 
                 i{
                     vertical-align: top;
@@ -476,8 +476,8 @@
             display: -ms-grid;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            -ms-grid-rows: auto auto 1fr 1fr;
-            grid-template-rows: auto auto 1fr 1fr;
+            -ms-grid-rows: auto auto 1fr;
+            grid-template-rows: auto auto 1fr;
             margin-bottom: 10vh;
             -webkit-box-align: center;
                 -ms-flex-align: center;
