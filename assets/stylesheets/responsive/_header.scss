@@ -56,11 +56,11 @@
             }
 
             .nav_dropdown_companies{
-                left: 37vh;
+                left: 47vh;
             }
 
             .nav_dropdown_students{
-                left: 59vh;
+                left: 65vh;
             }
         }
 
@@ -73,12 +73,15 @@
 @media only screen and (min-width: 850px) {
     header{
         nav{
+            .nav_dropdown_best{
+                left: 30vh;
+            }
             .nav_dropdown_companies{
-                left: 42vh;
+                left: 53vh;
             }
 
             .nav_dropdown_students{
-                left: 66vh;
+                left: 77vh;
             }
         }
     }
@@ -88,12 +91,15 @@
 @media only screen and (min-width: 960px) {
     header{
         nav{
+            .nav_dropdown_best{
+                left: 30vh;
+            }
             .nav_dropdown_companies{
-                left: 50vh;
+                left: 55vh;
             }
 
             .nav_dropdown_students{
-                left: 76vh;
+                left: 80vh;
             }
         }
     }
@@ -101,22 +107,6 @@
 
 
 @media only screen and (min-width: 1060px) {
-    header{
-        nav{
-            .nav_dropdown_companies{
-                left: 50vh;
-                width: 30vh;
-            }
-
-            .nav_dropdown_students{
-                left: 83vh;
-                width: 30vh;
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: 1260px) {
     header{
         nav{
             .nav_dropdown_companies{
@@ -132,16 +122,39 @@
     }
 }
 
-@media only screen and (min-width: 1360px) {
+@media only screen and (min-width: 1260px) {
     header{
         nav{
+            .nav_dropdown_best{
+                left: 34vh;
+            }
             .nav_dropdown_companies{
-                left: 60vh;
+                left: 64vh;
                 width: 30vh;
             }
 
             .nav_dropdown_students{
-                left: 105vh;
+                left: 100vh;
+                width: 30vh;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1360px) {
+    header{
+        nav{
+            .nav_dropdown_best{
+                left: 35vh;
+            }
+
+            .nav_dropdown_companies{
+                left: 70vh;
+                width: 30vh;
+            }
+
+            .nav_dropdown_students{
+                left: 115vh;
                 width: 30vh;
             }
         }
