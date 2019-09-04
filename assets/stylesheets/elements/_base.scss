@@ -15,6 +15,10 @@ body {
   color: $black;
 }
 
+nav{
+    display: flex;
+}
+
 h1 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;

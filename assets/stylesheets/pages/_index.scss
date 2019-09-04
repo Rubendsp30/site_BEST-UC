@@ -493,7 +493,7 @@
         }
     }
 
-    .anual_card{
+    .annual_card{
         -ms-grid-row: 2;
         -ms-grid-row-span: 1;
         grid-row: 2 / 3;
@@ -505,7 +505,7 @@
             width: 10%;
         }
 
-        .anual_card_content{
+        .annual_card_content{
             display: -ms-grid;
             display: grid;
             -ms-grid-columns: 10% 3rem 1fr 3rem 1fr 3rem 20%;
