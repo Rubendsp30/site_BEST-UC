@@ -57,8 +57,7 @@
 }
 @media (max-width: 500px) {
   .timeline-wrapper {
-    height: 1000px;
-    max-height: 900px;
+    height: 1500px;
   }
 }
 .timeline-slider {
@@ -77,10 +76,9 @@
 }
 .timeline-slide {
   position: relative;
-  overflow: hidden;
   background-repeat: no-repeat;
   outline: none;
-  background-size: auto 400px, cover;
+  background-size: auto auto, cover;
   background-position: top;
   margin: 0 24px;
   width: 80%;
@@ -99,13 +97,12 @@
 .timeline-slide__content {
   z-index: 5;
   position: absolute;
-  top: 220px;
+  top: 30px;
   background: #ffffff;
-  width: 80%;
   left: 50%;
   -webkit-transform: translate(-50%, 0px);
           transform: translate(-50%, 0px);
-  padding: 40px;
+  padding: 20px;
   opacity: 0;
   transition: opacity 1s;
 }
