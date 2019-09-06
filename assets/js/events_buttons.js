@@ -15,7 +15,7 @@ function showBEW(){
     $(".event_ebec").hide();
     $("#EBECbutton").css("background-color","#C4C4C4");
     $(".event_bew").show();
-    $("#BEWbutton").css("background-color","#42b089");
+    $("#BEWbutton").css("background-color","#323366");
     $(".event_hackathon").hide();
     $("#Hackbutton").css("background-color","#C4C4C4");
     $(".event_workshop").hide();
@@ -45,7 +45,7 @@ function showWorkshops(){
     $(".event_hackathon").hide();
     $("#Hackbutton").css("background-color","#C4C4C4");
     $(".event_workshop").show();
-    $("#Workshopbutton").css("background-color","rgb(255,0,0)");
+    $("#Workshopbutton").css("background-color","#EDD159");
     $(".event_palestra").hide();
     $("#Palestrasbutton").css("background-color","#C4C4C4");
 }

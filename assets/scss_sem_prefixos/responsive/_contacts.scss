@@ -4,7 +4,7 @@
         width: 85%;
     }
 
-    .board{
+    .contacts_grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto auto 1fr 1fr 1fr;
@@ -151,7 +151,7 @@
             }
         }
 
-        .board{
+        .contacts_grid{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: auto auto 1fr 1fr;

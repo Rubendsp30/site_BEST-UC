@@ -49,9 +49,7 @@
             .companies_banner{
                 display: -ms-grid;
                 display: grid;
-                -ms-grid-columns: 10% (1fr)[4] 10%;
                 grid-template-columns: 10% repeat(4, 1fr) 10%;
-                -ms-grid-rows: (auto)[4];
                 grid-template-rows: repeat(4, auto);
                 overflow: hidden;
                 margin-bottom: 7vh;
@@ -117,7 +115,7 @@
                     }
 
                     &.summerCourse{
-                        background-color: red;
+                        background-color: $yellow;
                     }
 
                     &.trainingdays{

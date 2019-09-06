@@ -8,9 +8,7 @@
     .courses_banner{
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: 10% (1fr)[4] 10%;
         grid-template-columns: 10% repeat(4, 1fr) 10%;
-        -ms-grid-rows: (auto)[4];
         grid-template-rows: repeat(4, auto);
         overflow: hidden;
         margin-bottom: 7vh;
@@ -193,4 +191,8 @@
         padding: 2vh;
         width: 80%;
     }
+}
+
+.courses_footer{
+    margin-top: 100vh;
 }
