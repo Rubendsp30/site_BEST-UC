@@ -38,9 +38,6 @@
         grid-row: 2 / 3;
     }
 
-    .students_partners{
-        display: none;
-    }
 }.students_landing > *:nth-child(1){
     -ms-grid-row: 1;
     -ms-grid-column: 1
@@ -70,6 +67,9 @@
     -ms-grid-column: 3
 }
 
+.students_partners{
+    display: none;
+}
 
 .students_submenu{
     display: -ms-grid;

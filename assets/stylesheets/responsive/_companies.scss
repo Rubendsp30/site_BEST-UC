@@ -1,4 +1,42 @@
+@media only screen and (min-width: 1000px) {
+    .companies_partners{
+        display: inline-block !important;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 1;
+        grid-column: 2 / 3;
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 1;
+        grid-row: 3 / 4;
+        margin: 7vh 0px;
+
+        img{
+            width: 10%;
+            margin: 1rem 4rem;
+            vertical-align: middle;
+
+            -webkit-box-pack: justify;
+
+                -ms-flex-pack: justify;
+
+                    justify-content: space-between;
+        }
+
+        #logo_pequeno{
+            width: 8%;
+        }
+
+        #logo_medio{
+            width: 13%;
+        }
+
+        #logo_grande{
+            width: 25%;
+        }
+    }
+}
+
 @media only screen and (min-width: 600px) {
+
     .companies_submenu{
         display: -ms-grid;
         display: grid;
@@ -6,7 +44,7 @@
         -ms-grid-rows: 5% 1fr 5%;
         grid-template-rows: 5% 1fr 5%;
         position: relative;
-        margin-top: 10vh;
+        margin-top: 40vh;
         margin-bottom: 5vh;
         text-align: center;
 
