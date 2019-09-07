@@ -1,54 +1,19 @@
-$(function(){
-   $('.timeline-nav').slick({
-      slidesToShow: 12,
-      slidesToScroll: 1,
-      asNavFor: '.timeline-slider',
-      centerMode: false,
-      focusOnSelect: true,
-       mobileFirst: true,
-      arrows: false,
-      infinite:false,
-       responsive: [
-           {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 8,
-           }
-          },
-         {
-          breakpoint: 0,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 2,
-          }
-        }
-     ]
-  });
+jQuery(document).ready(function($){
+	var $timeline_block = $('.cd-timeline-block');
 
-   $('.timeline-slider').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      asNavFor: '.timeline-nav',
-      centerMode: true,
-      cssEase: 'ease',
-       edgeFriction: 0.5,
-       mobileFirst: true,
-       speed: 500,
-       responsive: [
-         {
-          breakpoint: 0,
-          settings: {
-              centerMode: false
-          }
-        },
-           {
-          breakpoint: 768,
-          settings: {
-              centerMode: true
-          }
-        }
-     ]
-  });
+	//hide timeline blocks which are outside the viewport
+	$timeline_block.each(function(){
+		if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+			$(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+		}
+	});
 
+	//on scolling, show/animate timeline blocks when enter the viewport
+	$(window).on('scroll', function(){
+		$timeline_block.each(function(){
+			if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+				$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+			}
+		});
+	});
 });
